@@ -1,17 +1,15 @@
 class Backer
+  # a Backer will have many projects
   
-  attr_accessor :name, :projects
+  attr_accessor :name
+  attr_reader :projects
 
   def initialize(name)
     @name = name
     @backed_projects = []
   end
   
-  def projects
-    @projects
-  
   def back_project(project)
-    project = Project.new
     @backed_projects << project
   end
 
