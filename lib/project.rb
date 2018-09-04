@@ -1,5 +1,5 @@
 class Project
-  # has many Backers
+  # a Project has many Backers
 attr_accessor :title, :backers
 
   def initialize(title)
