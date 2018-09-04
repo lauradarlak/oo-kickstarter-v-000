@@ -8,7 +8,8 @@ class Backer
   end
   
   def backed_project(project)
-    
+    project = Project.new(title)
+    @backed_project << Project
   end
 
 end
