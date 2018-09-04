@@ -10,6 +10,8 @@ attr_accessor :title, :backers
   def add_backer(backer)
     @backers << backer
     backer.backed_projects << self
+    # add the instance directly to the variable to avoid
+    # entering into a loop
   end
 
 end
